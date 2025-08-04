@@ -91,18 +91,16 @@
   position: absolute;
   z-index: 1;
 
-  opacity: 0.5;
-
   color: var(--text-color, #000000);
   font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
 
   font-size: 14px;
-  line-height: normal;
+  line-height: 100%;
 
   text-transform: uppercase;
   text-shadow: 0 0 1px var(--page-background-color, #ffffff);
-  inset-inline-end: 13px;
-  inset-block-start: 24px;
+  inset-inline-end: 25px;
+  inset-block-start: 27px;
 
   mix-blend-mode: hard-light;
 }
@@ -216,7 +214,7 @@
 
 .modal {
   border: 2px solid var(--text-color, #000000);
-  padding: 25px 30px;
+  padding: 30px;
   color: var(--text-color, #000000);
   font-family: var(--page-accent-font-family, "PressStart2P", fantasy);
   line-height: 1.5;
@@ -227,7 +225,6 @@
 
 .modal[open] {
   display: grid;
-  /* Safari fix */
   grid-template-rows: repeat(2, min-content);
   gap: 30px;
 }
@@ -243,11 +240,11 @@
   gap: 16px;
 }
 
-/* .modal__icon {
+.modal__icon {
   flex-shrink: 0;
   inline-size: 39px;
   block-size: 39px;
-} */
+}
 
 .modal__button {
   inline-size: 100%;
@@ -310,11 +307,6 @@
     padding: 23px 25px 25px 25px;
   }
 
-  .modal {
-    padding: 28px 34px 28px 40px;
-    max-inline-size: 340px;
-  }
-
   .button__save {
     flex-direction: column;
   }
@@ -322,7 +314,6 @@
   .button__icon {
     block-size: 28px;
     inline-size: 28px;
-  }
 }
 
 @supports (
@@ -334,4 +325,5 @@
     -webkit-text-stroke: 1px var(--page-background-color, #ffffff);
     text-stroke: 1px var(--page-background-color, #ffffff);
   }
+}
 }
