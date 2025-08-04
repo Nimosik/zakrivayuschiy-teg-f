@@ -41,17 +41,8 @@
   gap: 20px;
 }
 
-.page__header {
-  margin-block-end: 100px;
-}
-
 .page-title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-}
-
-.header__title {
-  margin-block-start: clamp(7.5rem, 7.1479rem + 1.5023vw, 8.5rem);
-  margin-block-end: 20px;
 }
 
 .header__subtitle {
